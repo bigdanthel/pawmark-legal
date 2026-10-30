@@ -18,9 +18,9 @@
 
 <h2>What we collect</h2>
 <ul>
-<li><strong>Account.</strong> You can use Pawmark as a guest (an anonymous account with no personal details) or sign in with Apple. If you sign in with Apple we receive an account identifier and, if you allow it, your name and email address (or Apple's private relay address). These are held by our authentication provider, Firebase Authentication.</li>
+<li><strong>Account.</strong> You can use Pawmark as a guest (an anonymous account with no personal details) or sign in with Apple. If you sign in with Apple we receive an account identifier and your email address (or Apple's private relay address). The app may be given your name by Apple but does not store it. This account data is held by our authentication provider, Firebase Authentication.</li>
 <li><strong>Pet records you enter.</strong> Pet name, species, breed, colour, birth date, microchip or ID number, vaccinations, weight records, vet visits and notes, illness records, reminders, and food or medication stock. These are stored in Cloud Firestore, linked to your account, so they come back if you change phone or reinstall.</li>
-<li><strong>Photos and videos.</strong> Pet profile photos and illness photos and videos stay <strong>only on your device</strong>. We do not upload them. They are not part of the data stored on our servers, and they are not included in "Export my data".</li>
+<li><strong>Photos and videos.</strong> Pet profile photos and illness photos and videos stay <strong>only on your device</strong>. We do not upload them. They are not part of the data stored on our servers, and they are not included in "Export my data". Depending on your iOS settings, they may be included in your own device backup (for example iCloud Backup), which Apple controls.</li>
 <li><strong>Subscription status.</strong> Purchases are handled entirely by Apple. We do not receive your card or payment details. The app reads your subscription status from Apple (StoreKit).</li>
 </ul>
 <p>The records above are about your pets, but notes you type may contain information about you. Please keep that in mind when writing notes.</p>
@@ -40,13 +40,13 @@
 
 <h2>Who processes your data</h2>
 <ul>
-<li><strong>Google (Firebase Authentication and Cloud Firestore)</strong> stores account and pet records on our behalf. Google may process data in data centres outside your country. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
+<li><strong>Google (Firebase Authentication and Cloud Firestore)</strong> stores account and pet records on our behalf. Pet records are stored in Google data centres in Europe (Belgium and Netherlands). Sign-in data may be processed by Google outside Europe, and Google receives technical data needed to deliver the service, such as your IP address. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
 <li><strong>Apple</strong> provides Sign in with Apple and the App Store subscription system, under Apple's own privacy policy.</li>
 </ul>
 <p>We do not share your data with anyone else, except where the law requires it.</p>
 
 <h2>Keeping and deleting your data</h2>
-<p>We keep your data while your account exists. You can delete everything at any time in the app: <em>Settings &gt; Delete account</em>. This deletes your pet records from our servers, removes the photos and videos stored on your device, revokes the Sign in with Apple link and deletes the account. Deletion does not cancel an App Store subscription; cancel it separately in your Apple ID subscription settings.</p>
+<p>We keep your data while your account exists. You can delete everything at any time in the app: <em>Settings &gt; Delete account</em>. This deletes your pet records from our servers, removes the photos and videos stored on your device, revokes the Sign in with Apple link and deletes the account. Google may keep residual copies in its backups for a limited period after deletion. Deletion does not cancel an App Store subscription; cancel it separately in your Apple ID subscription settings.</p>
 <p>You can also get a copy of your records as a PDF with <em>Settings &gt; Export my data</em>.</p>
 
 <h2>Your rights</h2>
@@ -70,9 +70,9 @@
 
 <h2>Ne topluyoruz</h2>
 <ul>
-<li><strong>Hesap.</strong> Pawmark'ı misafir olarak (kişisel bilgi içermeyen anonim bir hesap) ya da Apple ile giriş yaparak kullanabilirsin. Apple ile girişte bir hesap kimliği ve izin verirsen adın ve e-posta adresin (ya da Apple'ın gizli yönlendirme adresi) bize ulaşır. Bunlar kimlik doğrulama sağlayıcımız Firebase Authentication'da tutulur.</li>
+<li><strong>Hesap.</strong> Pawmark'ı misafir olarak (kişisel bilgi içermeyen anonim bir hesap) ya da Apple ile giriş yaparak kullanabilirsin. Apple ile girişte bir hesap kimliği ve e-posta adresin (ya da Apple'ın gizli yönlendirme adresi) bize ulaşır. Apple uygulamaya adını da verebilir, ancak uygulama onu saklamaz. Bu hesap verileri kimlik doğrulama sağlayıcımız Firebase Authentication'da tutulur.</li>
 <li><strong>Girdiğin pet kayıtları.</strong> Pet adı, tür, cins, renk, doğum tarihi, mikroçip ya da kimlik numarası, aşılar, kilo kayıtları, veteriner ziyaretleri ve notları, hastalık kayıtları, hatırlatıcılar ve mama ya da ilaç stoğu. Bunlar hesabına bağlı olarak Cloud Firestore'da saklanır; böylece telefon değiştirsen ya da uygulamayı silip yeniden kursan geri gelir.</li>
-<li><strong>Fotoğraf ve videolar.</strong> Pet profil fotoğrafları ile hastalık fotoğrafları ve videoları <strong>yalnızca cihazında</strong> kalır. Biz yüklemeyiz. Sunucularımızda saklanan verinin parçası değildir ve "Verilerimi dışa aktar" çıktısına dahil değildir.</li>
+<li><strong>Fotoğraf ve videolar.</strong> Pet profil fotoğrafları ile hastalık fotoğrafları ve videoları <strong>yalnızca cihazında</strong> kalır. Biz yüklemeyiz. Sunucularımızda saklanan verinin parçası değildir ve "Verilerimi dışa aktar" çıktısına dahil değildir. iOS ayarlarına göre, Apple'ın yönettiği kendi cihaz yedeğine (örneğin iCloud Yedekleme) dahil olabilirler.</li>
 <li><strong>Abonelik durumu.</strong> Satın alma işlemleri tamamen Apple tarafından yürütülür. Kart ya da ödeme bilgilerin bize ulaşmaz. Uygulama abonelik durumunu Apple'dan (StoreKit) okur.</li>
 </ul>
 <p>Yukarıdaki kayıtlar petlerinle ilgilidir, ancak yazdığın notlar senin hakkında bilgi içerebilir. Not yazarken bunu aklında tut.</p>
@@ -92,13 +92,13 @@
 
 <h2>Verini kimler işler</h2>
 <ul>
-<li><strong>Google (Firebase Authentication ve Cloud Firestore)</strong> hesap ve pet kayıtlarını bizim adımıza saklar. Google, veriyi bulunduğun ülkenin dışındaki veri merkezlerinde işleyebilir. Bkz. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</li>
+<li><strong>Google (Firebase Authentication ve Cloud Firestore)</strong> hesap ve pet kayıtlarını bizim adımıza saklar. Pet kayıtları Google'ın Avrupa'daki (Belçika ve Hollanda) veri merkezlerinde saklanır. Giriş verileri Google tarafından Avrupa dışında işlenebilir; Google ayrıca hizmeti sunmak için gereken teknik verileri (örneğin IP adresin) alır. Bkz. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</li>
 <li><strong>Apple</strong> Apple ile Giriş'i ve App Store abonelik sistemini kendi gizlilik politikası kapsamında sağlar.</li>
 </ul>
 <p>Kanunen zorunlu olmadıkça verini başka kimseyle paylaşmayız.</p>
 
 <h2>Verinin saklanması ve silinmesi</h2>
-<p>Hesabın var olduğu sürece verini saklarız. Her şeyi istediğin zaman uygulama içinden silebilirsin: <em>Ayarlar &gt; Hesabı Sil</em>. Bu işlem pet kayıtlarını sunucularımızdan siler, cihazındaki fotoğraf ve videoları kaldırır, Apple ile Giriş bağlantısını iptal eder ve hesabı siler. Silme işlemi App Store aboneliğini iptal etmez; aboneliği Apple Kimliği abonelik ayarlarından ayrıca iptal etmelisin.</p>
+<p>Hesabın var olduğu sürece verini saklarız. Her şeyi istediğin zaman uygulama içinden silebilirsin: <em>Ayarlar &gt; Hesabı Sil</em>. Bu işlem pet kayıtlarını sunucularımızdan siler, cihazındaki fotoğraf ve videoları kaldırır, Apple ile Giriş bağlantısını iptal eder ve hesabı siler. Google, silmeden sonra sınırlı bir süre yedeklerinde kalıntı kopyalar tutabilir. Silme işlemi App Store aboneliğini iptal etmez; aboneliği Apple Kimliği abonelik ayarlarından ayrıca iptal etmelisin.</p>
 <p>Kayıtlarının bir kopyasını <em>Ayarlar &gt; Verilerimi dışa aktar</em> ile PDF olarak alabilirsin.</p>
 
 <h2>Haklarınız</h2>
